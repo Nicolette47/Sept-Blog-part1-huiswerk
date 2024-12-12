@@ -1,0 +1,24 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 3em;
+    justify-content: flex-end;
+    /* flex-basis: 100%; of auto  werkt niet om box breder te krijgen,dus met width opgelost */
+    width: 90vw;
+    margin: 3em;
+}
+
+.navbar ul a.active {
+    color: white;
+}
+
+
+.active-menu-link {
+    color: var(--color-primary);
+
+}
+
+.default-menu-link {
+   color: #fff;
+}
