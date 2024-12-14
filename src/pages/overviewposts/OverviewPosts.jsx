@@ -3,8 +3,10 @@ import './OverviewPosts.css';
 import posts from '../../constants/data.json';
 import {Link} from 'react-router-dom';
 
+
 function OverviewPosts() {
     console.log(posts);
+
 
     return (
         <>
@@ -16,8 +18,7 @@ function OverviewPosts() {
                         return (
                             <>
                                 <li key={post.id} className="post-summary">
-                                    <strong><Link to="/posts/:id">{post.title}</Link></strong> ({post.author})
-                                    <br/>
+                                    <p><strong><Link to={`/posts/${post.id}`}>{post.title}</Link></strong> -({post.author})</p>
                                     <em>{post.comments} reacties - {post.shares} keer gedeeld</em>
                                 </li>
                             </>

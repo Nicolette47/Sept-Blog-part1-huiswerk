@@ -1,0 +1,32 @@
+.blog-container {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: auto;
+}
+
+
+.blog-container h1 {
+    color: var(--color-purple);
+}
+
+.blog-container h4 {
+    margin: 0.5em 0;
+    font-weight: normal;
+}
+
+.blog-container p {
+    padding-bottom: 1.3em;
+}
+
+
+.blog-container em {
+    font-size: 0.8em;
+    padding-bottom: 1.3em;
+}
+
+.blog-container a {
+    color: var(--color-white);
+    font-size: 0.8em;
+}
