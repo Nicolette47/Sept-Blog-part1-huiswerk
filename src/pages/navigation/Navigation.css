@@ -1,4 +1,4 @@
-ul {
+.nav-ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -6,7 +6,7 @@ ul {
     justify-content: flex-end;
     /* flex-basis: 100%; of auto  werkt niet om box breder te krijgen,dus met width opgelost */
     width: 90vw;
-    margin: 3em;
+    margin: 2em;
 }
 
 .navbar ul a.active {

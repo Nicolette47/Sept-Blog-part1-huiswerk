@@ -1,4 +1,30 @@
-ul {
-    display: flex;
-    flex-direction: column;
+.posts-container h1 {
+    color: var(--color-purple);
+}
+
+.posts-container p {
+    align-items: center;
+}
+
+.posts-container ul {
+    list-style-type: none;
+}
+
+.post-summary {
+    background-color: #fff;
+    color: var(--color-secondary);
+    margin-bottom: 1.5em;
+    padding: 1em;
+}
+
+
+
+.post-summary a {
+    color: var(--color-primary);
+}
+
+
+.post-summary em {
+    font-size: 0.8em;
+
 }

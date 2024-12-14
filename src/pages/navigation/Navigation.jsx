@@ -6,7 +6,7 @@ import {NavLink} from 'react-router-dom';
 function Navigation() {
     return (
 
-        <ul>
+        <ul className="nav-ul">
             <li>
                 <NavLink
                     className={({isActive}) => isActive ? 'active-menu-link' : 'default-menu-link'}
