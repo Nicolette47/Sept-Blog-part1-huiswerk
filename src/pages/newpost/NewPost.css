@@ -1,0 +1,35 @@
+.blogpost-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blogpost-container h1 {
+    color: var(--color-purple);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.blogpost-container label {
+    margin-top: 2em;
+    margin-bottom: 0.3em;
+}
+
+.blogpost-container input {
+    width: 100%;
+    padding: 0.7em;
+}
+
+.blogpost-container button {
+    margin: 2em 0;
+    width: 100%;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    padding: 1em;
+}
