@@ -1,3 +1,15 @@
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--color-tertiary);
+}
+
+.navigation-container img {
+    width: 15em;
+}
+
 .nav-ul {
     display: flex;
     flex-direction: row;
@@ -7,6 +19,11 @@
     /* flex-basis: 100%; of auto  werkt niet om box breder te krijgen,dus met width opgelost */
     width: 90vw;
     margin: 2em;
+    align-items: center;
+}
+
+.nav-ul li {
+    font-size: 1.5em;
 }
 
 .navbar ul a.active {

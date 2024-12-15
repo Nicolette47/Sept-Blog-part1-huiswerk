@@ -10,11 +10,10 @@ import PostDetail from './pages/postdetailpagina/PostDetail.jsx';
 
 
 function App() {
+
     return (
         <div className="page-container">
             <Navigation/>
-
-            <img src={logo} alt="Company logo"/>
 
             <Routes>
                 <Route path="/" element={<Home />} />

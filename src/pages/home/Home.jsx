@@ -1,10 +1,15 @@
 import React from 'react';
 import './Home.css';
+import billboard from '../../assets/images.jpg';
 
-function Home () {
+function Home() {
     return (
-        <h1>Dit is de home page</h1>
-
+        <>
+            <div className="homepage-container">
+            <h1>Bij Blogventure geloven we in de kracht van woorden</h1>
+            <img src={billboard} alt=" billboard met text no stress"/>
+            </div>
+        </>
     );
 }
 

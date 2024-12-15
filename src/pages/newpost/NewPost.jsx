@@ -1,18 +1,24 @@
 import React from 'react';
 import './NewPost.css';
+import calculateReadTime from "../../Helpers/calculateReadTime.js";
+import {useNavigate} from "react-router-dom";
+
 
 function NewPost() {
 
-    const [formState, setFormState] = React.useState ({
+    const [formState, setFormState] = React.useState({
         title: '',
         subtitle: '',
         name: '',
         blogpost: ''
     });
 
+    const navigate = useNavigate();
+
+
     function handleChange(e) {
         const changedField = e.target.name;
-        setFormState ({
+        setFormState({
             ...formState,
             [changedField]: e.target.value,
         });
@@ -21,14 +27,20 @@ function NewPost() {
     function handleSubmit(e) {
         e.preventDefault();
         console.log("Formulier data:");
-        for (const [key, value] of Object.entries(formState)) {
+        const allData = {
+            ...formState,
+            readTime: calculateReadTime(formState.blogpost),
+            created: new Date().toISOString(),
+            shares: 0,
+            comments: 0,
+        }
+
+        for (const [key, value] of Object.entries(allData)) {
             console.log(`${key}: ${value}`);
         }
-        console.log()
-        console.log("readTime: 34min")
-        console.log("comments: 0")
-        console.log("shares: 0")
+        navigate("/");
     }
+
 
     return (
         <>
@@ -42,7 +54,7 @@ function NewPost() {
                         name="title"
                         value={formState.title}
                         onChange={handleChange}
-                        required />
+                        required/>
 
                     <label htmlFor="subtitle-field">Subtitle</label>
                     <input
